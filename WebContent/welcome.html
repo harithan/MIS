@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>WELCOME TO MIS</title>
+<script language="javascript">
+function win()
+{
+window.open("loginpage.html","login","width="+420+",height="+320+",location=0,directories=0,menubar=0,toolbar=0,status=0,scrollbars=auto,resizable=0,top=0,left=2")
+}
+
+function showborder()
+{
+  document.getElementById("bodyimg").background="images/1.JPG";
+  document.getElementById("logintab").style.visibility="visible";
+}
+function showlogin()
+{
+  document.getElementById("tr").style.visibility="visible";
+  document.getElementById("lefttd").style.visibility="hidden";
+  document.getElementById("righttd").style.visibility="hidden";
+}
+function scroll()
+{
+ document.getElementById("marq2").direction="right";
+ document.getElementById("marq2").behavior="slide";
+ document.getElementById("marq1").direction="left";
+ document.getElementById("marq1").behavior="slide";
+ document.getElementById("lefttd").style.visibility="visible";
+ document.getElementById("righttd").style.visibility="visible";
+}
+function size()
+{
+   window.resizeTo(1050,850);
+}
+</script>
+</head>
+<body id="bodyimg" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onload="size()">
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		<table width="30%" border="0" cellspacing="0" cellpadding="0" align="center">
+		  <tr> 
+		     <td colspan="3"> 
+		      <div align="center" onmouseover="showborder()">
+				  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="320" height="200">
+		          <param name=movie value="banner2.swf">
+		          <param name=quality value=high>
+		          <embed src="banner2.swf" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="414" height="80">
+		          </embed> 
+		          </object>
+		       </div>
+		    </td>
+		  </tr>
+		</table>
+<br/>
+<table align="left" id="logintab" style="visibility:hidden" border=0 width="100%">
+<tr>
+<td align="center" width="60%"><marquee behavior="slide" direction="right"><img src="images/v.JPG" onmouseover="showlogin()" />&nbsp;&nbsp;&nbsp;&nbsp;</marquee></td>
+<td width="40%"></td>
+</tr>
+<tr style="visibility:hidden" id="tr">
+<td colspan="2">
+<table width="100%" border=0>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td width="38%" id="lefttd"><marquee id="marq1"><img src="images/arrowleft.gif" />&nbsp;&nbsp;&nbsp;<img src="images/arrowleft.gif" />&nbsp;&nbsp;<img src="images/arrowleft.gif" />&nbsp;&nbsp;<img src="images/arrowleft.gif" />&nbsp;&nbsp;<img src="images/arrowleft.gif" />&nbsp;&nbsp;&nbsp;<img src="images/arrowleft.gif" /></marquee></td>
+<td><img src="images/arrowleft.gif" /></td>
+<td><img src="images/login_but.jpg" id="loginbut" width="100" height="50" alt="click here to Login" onclick="win()" onmouseover="scroll()"/></td>
+<td><img src="images/arrowright.gif" /></td>
+<td width="38%" id="righttd"><marquee id="marq2" ><img src="images/arrowright.gif" />&nbsp;&nbsp;<img src="images/arrowright.gif" />&nbsp;&nbsp;<img src="images/arrowright.gif" />&nbsp;&nbsp;<img src="images/arrowright.gif" />&nbsp;&nbsp;&nbsp;<img src="images/arrowright.gif" />&nbsp;&nbsp;&nbsp;<img src="images/arrowright.gif" /></marquee></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr></table>
+</body>
+</html>

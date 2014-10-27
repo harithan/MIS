@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<script language="javascript">
+function fun()
+{
+//var width=screen.width;
+//var height=screen.height;
+//width=width-16;
+//height=height-130;
+var id=document.getElementById("login_id").value;
+var psw=document.getElementById("password").value;
+if((id=="mis")&&(psw=="mis"))
+{
+document.getElementById("err").innerHTML="";
+window.open("menu.html","menu","width="+1007+",height="+640+",location=0,directories=0,menubar=0,toolbar=0,status=0,scrollbars=auto,resizable=0,top=0,left=2")
+}
+else
+{
+document.getElementById("err").innerHTML="Invalid User Id or Password";
+}
+}
+</script>
+</head>
+<body background="./images/login.jpg">
+<br><br><br><br><br>
+<table align="center">
+<tr>
+<th>Login ID:</th><td><input type="text" name="login_id" id="login_id"></td>
+</tr>
+<tr>
+<th>Password:</th><td><input type="password" name="password" id="password"></td>
+</tr>
+<tr>
+<td colspan="2" align="center" style="visibility:hidden"><img src="./images/login_but.jpg" onclick="fun()"></td>
+</tr>
+<tr>
+<td align="center" id="cancel"><input type="button" value="Log in" onclick="return fun()"></td>
+<td colspan="2" align="center" id="cancel"><input type="reset"></td>
+</tr>
+<tr><td colspan="2" align="center"><br><p id="err"></p></td>
+</tr>
+</table>
+</body>
+</html>

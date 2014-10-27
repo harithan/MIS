@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="shortcut icon" href="./images/mis.ico" >
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>WELCOME TO COLLEGE MANAGEMENT INFORMATION SYSTEM</title>
+<script language="javascript">
+function fun()
+{
+//var width=screen.width;
+//var height=screen.height;
+//width=width-16;
+//height=height-130;
+var id=document.getElementById("login_id").value;
+var psw=document.getElementById("password").value;
+if((id=="mis")&&(psw=="mis"))
+{
+document.getElementById("err").innerHTML="";
+document.getElementById("login_id").value="";
+document.getElementById("password").value="";
+window.open("menu.html","menu","width="+1007+",height="+700+",location=0,directories=0,menubar=0,toolbar=0,status=0,scrollbars=auto,resizable=0,top=0,left=2")
+}
+else
+{
+document.getElementById("err").innerHTML="Invalid User Id or Password";
+}
+}
+</script>
+</head>
+<body><br><marquee bgcolor="skyblue" behavior="scroll"><h1>Welcome to Vasavi Engineering College Management Information System</h1></marquee><br>
+<table width="30%" border="0" cellspacing="0" cellpadding="0" align="center">
+		  <tr> 
+		     <td colspan="3"> 
+		      <div align="center">
+				  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="320" height="200">
+		          <param name=movie value="banner2.swf">
+		          <param name=quality value=high>
+		          <embed src="banner2.swf" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="414" height="80">
+		          </embed> 
+		          </object>
+		       </div>
+		    </td>
+		  </tr>
+		</table>
+		<br>
+		<br>
+		<fieldset><legend><b>Login</b></legend><br><br>
+<table align="center" border=0>
+<tr>
+<th>Login ID:</th><td><input type="text" name="login_id" id="login_id"></td>
+</tr>
+<tr>
+<th>Password:</th><td><input type="password" name="password" id="password"></td>
+</tr>
+<tr>
+<td colspan="2" align="center" style="visibility:hidden"><img src="./images/login_but.jpg" onclick="fun()"></td>
+</tr>
+<tr>
+<td align="center" colspan="2"><input type="button" value="Log in" onclick="return fun()">&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="reset"></td>
+</tr>
+<tr><td colspan="2" align="center"><br><p id="err"></p></td>
+</tr>
+</table>
+</fieldset>
+</body>
+</html>
