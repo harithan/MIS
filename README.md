@@ -1,7 +1,7 @@
 MIS
 ===
 
-Management information created for university students
+Management Information System created for university students
 
 ====
 
